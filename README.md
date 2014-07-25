@@ -49,6 +49,7 @@ Gets commit and signature information for a repository.
 
 * `options` (Object): Options for getting the commits.
   * `path` (String): The path to the repository.
+  * `committish` (String): Committish range to analyze.
   * `exceptionalAuthors` (Object): A hash of email addresses and names for authors who may commit without signing their commits.
 * `callback` (Function; `function( error, commits )`): Function to invoke after getting the commits.
   * `commits` (Array): An array of [commit objects](#commit-objects) for the repository.
@@ -59,6 +60,7 @@ Gets commit errors for a repositry. Errors include invalid email addresses for a
 
 * `options` (Object): Options for getting the commits.
   * `path` (String): The path to the repository.
+  * `committish` (String): Committish range to analyze.
   * `exceptionalAuthors` (Object): A hash of email addresses and names for authors who may commit without signing their commits.
 * `callback` (Function; `function( error, errors )`): Function to invoke after determining the commit errors.
   * `errors` (Array): An array of error messages for each invalid commit.

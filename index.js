@@ -23,10 +23,14 @@ function parsePerson( person ) {
 
 function getCommits( settings, callback ) {
 	var repo = new Repo( settings.path );
+	var committish = settings.committish || "master";
 	var exceptional = settings.exceptionalAuthors || {};
 	var delimiter = "---===DCO===---";
 
-	repo.exec( "log", "--format=%H%n%aN <%aE>%n%cN <%cE>%n%b" + delimiter, function( error, log ) {
+	repo.exec( "log",
+		"--format=%H%n%aN <%aE>%n%cN <%cE>%n%b" + delimiter,
+		committish,
+	function( error, log ) {
 		if ( error ) {
 			return callback( error );
 		}
