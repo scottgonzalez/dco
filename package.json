@@ -1,0 +1,27 @@
+{
+  "name": "dco",
+  "version": "0.0.0",
+  "author": "Scott González <scott.gonzalez@gmail.com> (http://scottgonzalez.com)",
+  "license": {
+    "type": "MIT",
+    "url": "https://github.com/scottgonzalez/dco/raw/master/LICENSE.txt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/scottgonzalez/dco.git"
+  },
+  "bugs": {
+    "url": "https://github.com/scottgonzalez/dco/issues"
+  },
+  "homepage": "https://github.com/scottgonzalez/dco",
+  "scripts": {
+    "test": "node tests/all.js"
+  },
+  "dependencies": {
+    "git-tools": "0.1.1",
+    "sane-email-validation": "0.0.1"
+  },
+  "devDependencies": {
+    "nodeunit": "0.9.0"
+  }
+}
