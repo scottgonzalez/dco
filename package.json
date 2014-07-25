@@ -19,7 +19,7 @@
   },
   "dependencies": {
     "git-tools": "0.1.1",
-    "sane-email-validation": "0.0.1"
+    "sane-email-validation": "1.0.0"
   },
   "devDependencies": {
     "nodeunit": "0.9.0"
