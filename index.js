@@ -101,6 +101,6 @@ function getCommitErrors( settings, callback ) {
 		});
 
 		errors = unique( errors );
-		callback( null, errors );
+		callback( null, errors, commits );
 	});
 }
